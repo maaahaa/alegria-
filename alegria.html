@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           background-image:url('img.jpg');
+           background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat;
+            margin: 0;
+            height: 100vh;
+        }
+        h1{
+            color:pink;
+            font-family:'Comic Sans MS';
+            text-align: center;
+        }
+        h2{
+            color:pink;
+            text-align: center;
+            font-family: 'Comic Sans MS';
+        }
+        p{
+            color: white;
+            text-align: center;
+            font-family: 'Comic Sans MS';
+        }
+        fieldset{
+            width: 30%;
+            height: 30%;
+            margin-left: 35%;
+            border: 0;
+    
+        }
+        div{
+            display: flex;
+            align-items: center; 
+        }
+
+        img{
+            margin-left: 25%;*/
+        }
+        a{
+            color: pink;
+            font-size: 20px;
+            line-height: 1.6;
+        font-family:'Comic Sans MS';}
+        #logo{
+            border-radius: 50%;
+            margin-left: 47.6%;
+        }
+
+
+
+
+
+           /* Cœurs flottants */
+           .heart {
+            position: absolute;
+            font-size: 30px;
+            color: red;
+            opacity: 0;
+            animation: heart-animation 4s infinite;
+        }
+
+        /* Animation des cœurs */
+        @keyframes heart-animation {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(-150px) scale(1.5);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-300px) scale(2);
+                opacity: 0;
+            }
+        }
+
+        /* Création d'un effet de coeur aléatoire avec une animation de position */
+        .heart:nth-child(1) { animation-delay: 0s; left: 5%; }
+        .heart:nth-child(2) { animation-delay: 0.5s; left: 20%; }
+        .heart:nth-child(3) { animation-delay: 1s; left: 35%; }
+        .heart:nth-child(4) { animation-delay: 1.5s; left: 50%; }
+        .heart:nth-child(5) { animation-delay: 2s; left: 65%; }
+        .heart:nth-child(6) { animation-delay: 2.5s; left: 80%; }
+   </style>
+</head>
+
+<body>
+<img src="logo.jpeg" alt="" height="65" width="65" id="logo">
+<h1>Bienvenue </h1>
+<h2>Nous sommes ravis de vous accueillir parmi nous !</h2>
+<fieldset>
+<p>
+    Rejoignez notre famille !<br>
+    Nous serions ravis de vous avoir parmi nous ! En tant que membre de notre famille, vous ferez partie d'une communauté chaleureuse et solidaire. Pour rester connecté et ne rien manquer de nos dernières nouvelles, rejoignez-nous sur nos réseaux sociaux :</p>
+<br>
+<div><img src="insta.webp" alt="" height="50mm" width="50mm">
+<a href="https://www.instagram.com/alegria_accessoire/?igsh=MTR3MnBxZXp4ZHI3Yw%3D%3D#">Alegria_accessoire</a></div><br>
+<div>
+<img src="fb.webp" alt="" height="50mm" width="50mm">
+<a href="https://www.facebook.com/profile.php?id=100092147302389&mibextid=ZbWKwL">Alegria_accessoire</a></div>
+
+
+    <!-- Cœurs animés -->
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+
+</fieldset>
+</body>
+</html>
